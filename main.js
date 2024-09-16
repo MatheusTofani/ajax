@@ -20,6 +20,9 @@ $(document).ready(function () {
             nome.text(json.name);
             perfil.text(json.login);
         })
+        .catch(function (err) {
+            console.error('Erro ao buscar informações:', err);
+        });
 })
 
 
